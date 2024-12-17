@@ -1,0 +1,10 @@
+{
+  "extensionName": {
+    "message": "Discord 翻译助手",
+    "description": "扩展名称"
+  },
+  "extensionDescription": {
+    "message": "为 Discord 提供实时翻译功能",
+    "description": "扩展描述"
+  }
+}

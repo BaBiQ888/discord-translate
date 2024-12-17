@@ -1,0 +1,11 @@
+{
+  "extensionName": {
+    "message": "Discord 消息翻译助手"
+  },
+  "extensionDescription": {
+    "message": "一键翻译 Discord 聊天消息"
+  },
+  "autoTranslate": {
+    "message": "自动翻译消息"
+  }
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Discord 翻译助手</title>
+  <style>
+    :root {
+      --brand-color: #5865F2;
+      --background-primary: #ffffff;
+      --background-secondary: #f2f3f5;
+      --text-normal: #2e3338;
+      --text-muted: #747f8d;
+      --interactive-normal: #4f545c;
+      --interactive-hover: #2e3338;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --brand-color: #5865F2;
+        --background-primary: #36393f;
+        --background-secondary: #2f3136;
+        --text-normal: #dcddde;
+        --text-muted: #a3a6aa;
+        --interactive-normal: #b9bbbe;
+        --interactive-hover: #dcddde;
+      }
+    }
+
+    body {
+      width: 300px;
+      height: 400px;
+      margin: 0;
+      padding: 16px;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      background: var(--background-primary);
+      color: var(--text-normal);
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    h2 {
+      margin: 0 0 16px;
+      color: var(--text-normal);
+      font-size: 18px;
+    }
+
+    .setting-item {
+      margin: 12px 0;
+      padding: 12px;
+      background: var(--background-secondary);
+      border-radius: 8px;
+    }
+
+    .setting-item label {
+      display: flex;
+      align-items: center;
+      color: var(--text-normal);
+      cursor: pointer;
+    }
+
+    input[type="checkbox"] {
+      margin-right: 8px;
+      width: 16px;
+      height: 16px;
+    }
+
+    select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 8px;
+      border: 1px solid var(--text-muted);
+      border-radius: 4px;
+      background: var(--background-primary);
+      color: var(--text-normal);
+      cursor: pointer;
+    }
+
+    select:hover {
+      border-color: var(--brand-color);
+    }
+
+    #status {
+      margin-top: 12px;
+      padding: 8px;
+      border-radius: 4px;
+      background: var(--background-secondary);
+      color: var(--text-normal);
+      text-align: center;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    #status.show {
+      opacity: 1;
+    }
+
+    .theme-toggle {
+      margin-top: auto;
+      padding: 8px;
+      border: none;
+      border-radius: 4px;
+      background: var(--brand-color);
+      color: white;
+      cursor: pointer;
+      transition: opacity 0.2s ease;
+    }
+
+    .theme-toggle:hover {
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Discord 翻译助手</h2>
+    <div class="setting-item">
+      <label>
+        <input type="checkbox" id="autoTranslate"> 自动翻译
+      </label>
+    </div>
+    <div class="setting-item">
+      <label>目标语言</label>
+      <select id="targetLanguage">
+        <option value="zh">中文</option>
+        <option value="en">英文</option>
+        <option value="ja">日文</option>
+      </select>
+    </div>
+    <div class="setting-item">
+      <label>翻译样式</label>
+      <select id="translationStyle">
+        <option value="default">默认样式</option>
+        <option value="compact">紧凑样式</option>
+        <option value="minimal">简约样式</option>
+      </select>
+    </div>
+    <div id="status"></div>
+    <button class="theme-toggle" id="themeToggle">切换主题</button>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html> 
