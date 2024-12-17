@@ -12,7 +12,7 @@
 ## Installation  
 1. Clone this repository:  
    ```bash
-   git clone https://github.com/yourusername/discord-translate.git
+   git clone https://github.com/BaBiQ888/discord-translate.git
 
 	2.	Open Chrome and navigate to chrome://extensions/.
 	3.	Enable Developer Mode in the top right corner.
@@ -38,4 +38,4 @@ If you encounter any issues or have suggestions, feel free to open an issue or c
 
 Break language barriers and connect globally with Discord-Translate!
 
-Make sure to replace `https://github.com/yourusername/discord-translate.git` with your actual repository URL.
+Make sure to replace `https://github.com/BaBiQ888/discord-translate.git` with your actual repository URL.
